@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#7986CB"
+    android:padding="10dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bottom_shade"
+                android:layout_margin="5dp"
+                >
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:text="নামতা মাস্টার \nশিখি সহজে, হিসাব করি দ্রুত"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/bottom_shade"
+        android:layout_margin="10dp"
+        />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/namota_custom"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/new_custom"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="তোমার নামতা তৈরি করো"
+                        android:textColor="#546E7A"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/subtitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="যেকোনো সংখ্যা এবং ঘরের সংখ্যা নির্বাচন করো।"
+                        android:textColor="#BCAAA4"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <!-- দুটি ইনপুট বক্স পাশাপাশি -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <!-- প্রথম ইনপুট বক্স -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="কোন সংখ্যার নামতা চাও?"
+                            android:textColor="#FFECB3"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/ed1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittext_custom"
+                            android:hint="যেমন: ৫"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <!-- দ্বিতীয় ইনপুট বক্স -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="কত ঘর পর্যন্ত নামতা চাও?"
+                            android:textColor="#FFECB3"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/ed2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittext_custom"
+                            android:hint="যেমন: ১০"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <Button
+                        android:id="@+id/myButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="এখানে ক্লিক করুন"
+                        android:textColor="#ffffff"
+                        android:backgroundTint="#303F9F"
+                        android:textSize="30dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        />
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="300dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/tvdisplay_custom"
+                android:text="তোমার নামতা"
+                android:textColor="#5C6BC0"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="top|center_horizontal"
+                android:padding="12dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
